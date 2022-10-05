@@ -1,0 +1,125 @@
+.nav-header {
+    display: flex;
+    justify-content: center;
+
+} 
+.navbar1 {
+    display: flex;
+    justify-content: center;
+    background: rgb(37, 37, 37);
+    color: white;
+    width: 50%;
+    gap: 100px;
+}
+
+.navbar2 {
+    display: flex;
+    justify-content: center;
+    background: rgb(37, 37, 37);
+    color: white;
+    width: 50%;
+    gap: 100px;
+}
+
+.logo {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: rgb(37, 37, 37);
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000%;
+  /* position: relative; */
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 1px;
+  width: 1px;
+  margin: 0 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* transition: background-color 0.6s ease; */
+}
+
+.slideshow-image {
+    width: 100%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+/* .fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+} */
+
+.hidden {
+    display: none;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    color: gray;
+}
+
+.intro-paragraph {
+    width: 800px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn-menu {
+    font-size: 30px;
+    color: black;
+    background-color: gold;
+    width: 250px;
+    border-radius: 5px;
+    height: 75px;
+}
+
+.welcome {
+    font-size: 30px;
+    color: gold;
+}
+
+.name {
+    font-size: 60px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
