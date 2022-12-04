@@ -9,23 +9,23 @@
 </head>
 <body>
 
+ 
+
 <nav class="nav-header">
 
-    <div class="navbar1">
-      <a href="/Users/brentsharpe/repos/Pizza-Shop/about.html" class="menu">About</a>
-      <a href="/Users/brentsharpe/repos/Pizza-Shop/location.html" class="menu">Location</a>
-    </div>
+    <ul class="navbar1">
+        <li><a href="/Users/brentsharpe/repos/Pizza-Shop/about.html" class="menu">About</a></li>
+        <li><a href="/Users/brentsharpe/repos/Pizza-Shop/location.html" class="menu">Location</a></li>
+    </ul>
 
-    <a href="/Users/brentsharpe/repos/Pizza-Shop/index.html">
-      <img src="pizza.png" alt="cheesy pizza" class="logo">
-    </a>
+          <a href="/Users/brentsharpe/repos/Pizza-Shop/index.html"><img src="pizza.png" alt="cheesy pizza" class="logo"></a>
+        
+    <ul class="navbar2">
+        <li><a href="/Users/brentsharpe/repos/Pizza-Shop/menu.html" class="menu">Menu</a></li>
+       <li><a href="/Users/brentsharpe/repos/Pizza-Shop/contact.html" class="menu">Contact</a></li>
+    </ul>
 
-    <div class="navbar2">
-      <a href="/Users/brentsharpe/repos/Pizza-Shop/menu.html" class="menu">Menu</a>
-      <a href="/Users/brentsharpe/repos/Pizza-Shop/contact.html" class="menu">Contact</a>
-    </div>
-
-  </nav>
+</nav>
 
 <div class="slideshow-container">
 
@@ -52,9 +52,11 @@
 
 <div class="intro-container">
  <p class="welcome">Welcome to </p>
- <p class="name">Neighbors Pizza and Beer Garden</p>
+ <h1 class="name">Neighbors Pizza and Beer Garden</h1>
  <p class="intro-paragraph">At Neighbors, we take a unique approach to preparing your food. We use the highest quality products and everything is prepared fresh. This means fresh dough, fresh cheese, fresh tomatoes, and more. We would love to see you and your family enjoying our space with delicious pizza and beer.</p>
- <button class="btn-menu">View Menu</button>
+ <a href="/Users/brentsharpe/repos/Pizza-Shop/menu.html">
+  <button class="btn-menu">View Menu</button>
+</a>
 </div>
 
 <div class="picture-grid">
@@ -69,16 +71,23 @@
 
 <div class="intro-container">
   <p class="welcome">We are not fast food. We are fresh food. We love our food like we love our family.</p>
-  <p class="intro-paragraph-2">At Neighbors, quality is everything. In a world where a drive-thru is the norm and food is often over-processed, prepackaged and always frozen, Neighbors sets itself apart by doing things the old fashioned way. We use the same sourdough start for all of our pizzas. We off neapolitan style and Detroit style sourdough pizza with a variety of fresh toppings.</p>
-  <button class="btn-menu">About Our Food</button>
+  <p class="intro-paragraph-2">At Neighbors, quality is everything. In a world where a drive-thru is the 
+    norm and food is often over-processed, prepackaged and always frozen, Neighbors sets itself apart by 
+    doing things the old fashioned way. We use the same sourdough start for all of our pizzas. We offer neapolitan 
+    style and Detroit style sourdough pizza with a variety of fresh toppings.</p>
+    <a href="/Users/brentsharpe/repos/Pizza-Shop/about.html">
+      <button class="btn-menu">About Our Food</button>
+    </a>
  </div>
 
+ <h1 class="location-information">Location and Information</h1>
  <div class="location-container">
-    <p>Location and Information</p>
-    <img src="location.jpg" alt="" class="location-img">
+        <img src="location.jpg" alt="" class="location-img">
+        <div class="address">
+          <h3>Address</h3>
+          <p>123 Somewhere Drive <br> Anywhere, Country 12345 <br>555-555-5555</p>
+        </div>
  </div>
-
-    <script src="script.js"></script>
 
     <div class="party-banner-container">
       <div class="party-banner">
@@ -86,7 +95,7 @@
         <p>Birthdays! Game Day! Hump Day! Block Parties! Concerts! Weddings! 
           Funerals! Graduations! Office Parties! Got Divorced! Field Parties! 
           Neighbors fresh, delicious chicken party platters are perfect for any get-together.</p>
-          <a href="">
+          <a href="/Users/brentsharpe/repos/Pizza-Shop/menu.html">
             <button class="party-menu-btn">☞Party Platters Menu☜</button>
         </a>
     </div>
@@ -95,5 +104,7 @@
     <footer>
       <h4 class="footer">Site by Brent Sharpe</h4>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
