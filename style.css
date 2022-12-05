@@ -468,3 +468,48 @@ textarea {
     color: gold;
     font-size: 30px;
 }
+
+.location-top {
+    display: flex;
+    gap: 200px;
+}
+
+.location-page-container {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.location-page-container h1 {
+    color: white;
+    font-size: 70px;
+}
+
+.location-address {
+    color: white;
+}
+
+.phone {
+    width: 200px;
+    height: 200px;
+}
+
+.location-hurry-container {
+    display: flex;
+}
+
+.location-bottom {
+    color: white;
+    display: flex;
+    gap: 300px;
+    margin-bottom: 50px;
+}
+
+.slideshow-container-1 {
+    width: 60%;
+}
+
+#map {
+    width: 500px;
+    height: 500px;
+}
