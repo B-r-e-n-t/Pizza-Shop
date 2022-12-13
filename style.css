@@ -68,7 +68,8 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000%; 
+  max-width: 100%; 
+  height: auto;
   position: relative;
   margin: auto;
   background-attachment: fixed;
@@ -120,7 +121,7 @@ img {
 }
 
 .intro-paragraph {
-    width: 800px;
+    width: 70%;
     font-size: 30px;
     text-align: center;
 }
@@ -212,17 +213,19 @@ img {
 }
 
 .intro-paragraph-2 {
-    width: 950px;
+    width: 70%;
     font-size: 30px;
     text-align: center;
 }
 
 .location-container {
     display: flex;
+    flex: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
     padding: 50px;
+    width: 70%;
 }
 
 .location-information {
@@ -236,8 +239,8 @@ img {
 }
 
 .location-img {
-    height: 500px;
-    width: 650px;
+    height: 50%;
+    width: 65%;
     justify-content: flex-start;
 }
 
@@ -512,4 +515,16 @@ textarea {
 #map {
     width: 500px;
     height: 500px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
 }
