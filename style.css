@@ -258,7 +258,7 @@ img {
 }
 
 .contact-header {
-    background: url(grid1.jpg);
+    background: url(images/grid1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
@@ -339,7 +339,7 @@ textarea {
 }
 
 .party-banner-container {
-    background: url(partypic.jpg);
+    background: url(images/partypic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
