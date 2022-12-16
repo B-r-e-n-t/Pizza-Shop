@@ -517,6 +517,10 @@ textarea {
     height: 500px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     .logo {
         width: 100px;
