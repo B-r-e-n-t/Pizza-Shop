@@ -1,3 +1,13 @@
+const hamburgerButton = document.getElementById('hamburger-button');
+const navBarLinks = document.getElementById('navbar-links');
+
+hamburgerButton.addEventListener('click', () => {
+    console.log('butt')
+    navBarLinks.classList.toggle('active')
+})
+
+
+
 let slideIndex = 0;
 showSlides();
 
@@ -15,20 +25,20 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000);
 }
 
 
 // Initialize and add the map
 function initMap() {
-  // The location of Uluru
+  // The location
   const neighbors = { lat: 32.044178, lng: -58.655726 };
-  // The map, centered at Uluru
+  // The map, centered
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: neighbors,
   });
-  // The marker, positioned at Uluru
+  // The marker, positioned
   const marker = new google.maps.Marker({
     position: neighbors,
     map: map,
