@@ -443,6 +443,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 
 .menu-intro h1 {
@@ -547,9 +548,7 @@ textarea {
 }
 
 .location-page-container {
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .location-page-container h1 {
