@@ -178,14 +178,14 @@ html,body {
     color: gray;
 }
 
-p {
+/* p {
     text-align: center;
-}
+} */
 
 .intro-paragraph {
     width: 70%;
     font-size: 3.5vw;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .btn-menu {
@@ -281,7 +281,7 @@ h1 {
 .intro-paragraph-2 {
     width: 70%;
     font-size: 3.5vw;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .location-container {
@@ -298,6 +298,7 @@ h1 {
     font-size: 4.5vw;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .location-img {
@@ -315,7 +316,7 @@ h1 {
 
 .address h3{
     color: gold;
-    text-align: center;
+    /* text-align: center; */
     font-size: 4.5vw;
 }
 
@@ -470,14 +471,14 @@ textarea {
 
 .about-intro h1 {
     color: white;
-    font-size: 45px;
+    font-size: 4.5vw;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .about-intro h4 {
     color: gray;
-    font-size: 20px;
+    font-size: 3.5vw;
     font-weight: lighter;
 }
 
