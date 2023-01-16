@@ -334,8 +334,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5.5vw;
+    font-size: 5rem;
     margin: 0;
+}
+
+@media(max-width: 600px) {
+    .contact-header {
+        font-size: 4.5rem;
+    }
 }
 
 .contact-container {
@@ -364,6 +370,12 @@ form {
     width: 60%;
     margin: auto;
     gap: 30px;
+}
+
+@media(max-width: 500px) {
+    form {
+        width: 90vw;
+    }
 }
 
 .name {
