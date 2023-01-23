@@ -364,7 +364,7 @@ h1 {
     line-height: 1.5;
 }
 
-form {
+#contact-form {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -372,9 +372,22 @@ form {
     gap: 30px;
 }
 
-@media(max-width: 500px) {
-    form {
-        width: 90vw;
+label {
+    color: gray;
+    font-size: 1rem;
+}
+
+input, textarea {
+    font-size: 20px;
+}
+
+textarea {
+    height: 200px;
+}
+
+@media(max-width: 1000px) {
+    #contact-form {
+        width: 90%;
     }
 }
 
@@ -382,10 +395,14 @@ form {
 font-size: 30px;
 }
 
-.submit-btn {
+.submit-button {
     background-color: gold;
     font-size: 20px;
     height: 7vh;
+}
+
+.submit-button:hover {
+    cursor: pointer;
 }
 
 input {
