@@ -109,31 +109,19 @@ html,body {
     height: 100px;
     border-radius: 10px;
     transition: transform .2s;
-    /* align-items: center; 
-    align-content: center;
-    justify-content: center;
-    vertical-align: middle; */
+    
 }
 
 .logo:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    /* -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); */
     transform: scale(1.5);
 }
 
-/* .mySlides {
-    display: none;
-} */
 
-/* img {
-    vertical-align: middle;
-} */
-
-/* Slideshow container */
 .slideshow-container {
   max-width: 100%; 
   height: auto;
-  /* position: relative; */
   margin: auto;
   background-attachment: fixed;
   background-position: center;
@@ -141,15 +129,14 @@ html,body {
   background-size: cover;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+/* .dot {
   height: 1px;
   width: 1px;
   margin: 0 0px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-}
+} */
 
 /* .slideshow-image {
     width: 100%;
@@ -178,9 +165,7 @@ html,body {
     color: gray;
 }
 
-/* p {
-    text-align: center;
-} */
+
 
 .intro-paragraph {
     width: 70%;
@@ -548,25 +533,25 @@ textarea {
     grid-row-end: 3;
 }
 
-.about-middle {
+.about-pizza-style {
     width: 65%;
     margin: auto;
 }
 
-.about-middle h1 {
+.about-pizza-style h1 {
     color: white;
     font-size: 45px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.about-middle h4 {
+.about-pizza-style h4 {
     color: gray;
     font-size: 20px;
     font-weight: lighter;
 }
 
-.about-middle h3 {
+.about-pizza-style h3 {
     color: gold;
     font-size: 30px;
 }
@@ -583,6 +568,10 @@ textarea {
 .location-page-container h1 {
     color: white;
     font-size: 4.5vw;
+}
+
+.location-page-container h3 {
+    color: white;
 }
 
 .location-address {
