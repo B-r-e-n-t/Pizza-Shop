@@ -1,8 +1,24 @@
-const hamburgerButton = document.getElementById('hamburger-button');
-const navBarLinks = document.getElementById('navbar-links');
+// const hamburgerButton = document.getElementById('hamburger-button');
+// const navBarLinks = document.getElementById('navbar-links');
 
-hamburgerButton.addEventListener('click', () => {
-    navBarLinks.classList.toggle('active')
+// hamburgerButton.addEventListener('click', () => {
+//     navBarLinks.classList.toggle('active')
+// })
+
+
+
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link');
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open')
+    })
 })
 
 

@@ -12,112 +12,164 @@ html,body {
     margin: 0;
     padding: 0;
   }
-  
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  /* >>>>>>>>>>>>>>>>>>    Navbar     <<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
+  .logo {
+    max-width: 125px;
+    margin: auto;
   }
 
-  #navbar-links {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  .nav {
+    position: fixed;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translateY(-100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
   }
   
-  #navbar-links ul {
-    margin: 0;
-    padding: 0;
+  .nav__list {
+    list-style: none;
+    background-color: rgb(37, 37, 37);
     display: flex;
+    height: 100%;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 0;
+    padding: 0;
   }
   
-  #navbar-links  li{
-    list-style: none;
-    font-size: 2rem;
-  }
-  
-  #navbar-links li a {
-    text-decoration: none;
+  .nav__link {
     color: white;
-    padding: 1rem;
-    display: block;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-bottom: 15px;
   }
   
-  #navbar-links li:hover {
+  .nav__link:hover {
     cursor: pointer;
-    background-color: rgb(53, 52, 52);
+    border-bottom: goldenrod 1px solid;
   }
   
-  #hamburger-button {
+  .nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
     position: absolute;
-    padding: 5px;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40px;
-    height: 30px;
-    background-color: rgb(53, 52, 52);
-    border-radius: 5px;
+    right: 1em;
+    top: 2.25em;
+    z-index: 1000;
   }
   
-  #hamburger-button .bar{
+  .hamburger {
+    display: block;
+    position: relative;
+  }
+  
+  .hamburger,
+  .hamburger::before, 
+  .hamburger::after {
+    background: white;
+    width: 2em;
     height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
   }
   
-  @media (max-width: 800px) {
-    #hamburger-button {
-      display: flex;
-    }
   
-    #navbar-links {
-      display: none;
-      width: 100%;
-    }
+  .hamburger::before, 
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
   
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  .hamburger::before {
+    top: 6px;
+  }
   
-    #navbar-links ul {
-      flex-direction: column;
-      width: 100%;
-    }
+  .hamburger::after {
+    bottom: 6px;
+  }
   
-    #navbar-links li {
-      text-align: center;
-    }
+  .nav-open .nav{
+    transform: translate(0);
+  }
   
-    #navbar-links.active {
-      display: flex;
-    }
-
-    .party-banner {
-        width: 80%;
-    }
+  .nav-open .nav-toggle {
+    position: fixed;
+  }
+  
+  .nav-open .hamburger,
+  .nav-open .hamburger::before, 
+  .nav-open .hamburger::after {
+    background: white;
+  }
+  
+  .nav-open .hamburger {
+    transform: rotate(.625turn);
+  }
+  
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+  }
+  
+  .nav-open .hamburger::after {
+    opacity: 0;
   }
 
-.logo {
-    width: 150px;
-    height: 100px;
-    border-radius: 10px;
-    transition: transform .2s;
-    
-}
+  @media(min-width: 1200px) {
+    .nav {
+        position: relative;
+        color: white;
+        transform: none;
+        display: flex;
+        width: 100%;
+      }
 
-.logo:hover {
-    /* -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5); */
-    transform: scale(1.5);
-}
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
+      }
 
+      .nav__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        transform: none;
+        transition: none;
+      }
+
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav__link {
+        color: white;
+        font-weight: bolder;
+        font-size: 2rem;
+        text-decoration: none;
+      }
+
+      .logo {
+        margin: 0;
+      }
+  }
+
+ /* >>>>>>>>>>>>>>>>>>    Hero     <<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
 
 .slideshow-container {
   max-width: 100%; 
@@ -129,24 +181,6 @@ html,body {
   background-size: cover;
 }
 
-/* .dot {
-  height: 1px;
-  width: 1px;
-  margin: 0 0px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-} */
-
-/* .slideshow-image {
-    width: 100%;
-    height: auto;
-} */
-
-.active {
-  background-color: rgb(37, 37, 37);
-}
-
 .hidden {
     display: none;
 }
@@ -155,6 +189,8 @@ html,body {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/*    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Introduciton   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
 
 .intro-container {
     display: flex;
@@ -166,11 +202,9 @@ html,body {
 }
 
 
-
 .intro-paragraph {
     width: 70%;
     font-size: 3.5vw;
-    /* text-align: center; */
 }
 
 .btn-menu {
@@ -191,7 +225,6 @@ html,body {
     font-size: 4.5vw;
     color: white;
     text-align: center;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 h1 {
@@ -277,6 +310,8 @@ h1 {
     gap: 50px;
 }
 
+/*    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Location   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
 .location-information {
     color: white;
     width: 100vw;
@@ -309,6 +344,8 @@ h1 {
     color: white;
     font-size: 3.0vw;
 }
+
+/*    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Contact Page  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
 
 .contact-header {
     background: url(images/grid1.jpg);
@@ -420,6 +457,8 @@ textarea {
     border-radius: 5px;
 }
 
+/*    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Party Banner and Footer  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
 .party-banner-container {
     background: url(images/partypic.jpg);
     background-repeat: no-repeat;
@@ -452,6 +491,8 @@ textarea {
     padding: 30px;
 }
 
+/*    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Menu Page   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
 .menu-intro {
     display: flex;
     flex-direction: column;
@@ -478,10 +519,11 @@ textarea {
     width: 100%;
 }
 
+/*    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  About Page   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
 .about-intro {
     width: 65%;
     margin: auto;
-    
 }
 
 .about-intro h1 {
@@ -556,6 +598,8 @@ textarea {
     font-size: 30px;
 }
 
+/*    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Location Page   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
 .location-top {
     display: flex;
     gap: 200px;
@@ -598,10 +642,6 @@ textarea {
     margin-bottom: 50px;
 }
 
-/* .slideshow-container-1 {
-    width: 60%;
-} */
-
 #map {
     width: 500px;
     height: 500px;
@@ -630,8 +670,4 @@ button:hover{
         display: flex;
         flex-direction: column;
     }
-    /* #map {
-        width: 200px;
-        height: 200px;
-    } */
 }
