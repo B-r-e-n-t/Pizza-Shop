@@ -7,27 +7,24 @@
     <title>Neighbors Pizza and Beer Garden - About Page</title>
     <meta name="description" content="Neighbors Pizza and Beer Garden uses only the best ingredients that are always fresh. We started Neighbors to give the people of Syracuse a relaxing spot to enjoy great pizza and great beer.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="images/pizza.png">
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="#" id="hamburger-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-      
-        <div id="navbar-links">
-          <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="location.html">Location</a></li>
-              <a href="index.html"><img src="images/pizza.png" alt="cheesy pizza" class="logo"></a>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      
-      </nav>
+  <header class="navigation">
+    <button class="nav-toggle">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="menu.html" class="nav__link">Menu</a></li>
+            <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+            <li class="nav__item"><a href="index.html"><img src="images/pizza.png" class="logo" alt="logo"></a></li>
+            <li class="nav__item"><a href="location.html" class="nav__link">Location</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section class="about-intro">
         <h1>Our food is a labor of Love</h1>
@@ -76,7 +73,7 @@
     </section>
   
       <footer>
-        <h4 class="footer">Site by Brent Sharpe</h4>
+        <h3 class="footer">Site developed by Sharpe Websites, designed by 323 Design</h3>
     </footer>
     
     <script src="script.js"></script>
