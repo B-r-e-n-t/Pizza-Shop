@@ -60,7 +60,7 @@ header {
 .hamburger {
     display: none;
     font-size: 28px;
-    color: white;
+    color: #133d24;
     cursor: pointer;
 }
 
@@ -83,7 +83,7 @@ header {
 }
 
 /* Nav button */
-.nav-button {
+/* .nav-button {
     background: #ffffff;
     color: #133d24;
     padding: 8px 16px;
@@ -92,20 +92,21 @@ header {
     text-decoration: none;
     border: 2px solid #ffffff;
     transition: 0.25s ease;
-}
+} */
 
 /* Hover effect */
-.nav-button:hover {
+/* .nav-button:hover {
     background: #133d24;
     color: white;
-}
+} */
 
 /* Mobile menu button */
-.mobile-btn {
+/* .mobile-btn {
     margin-top: 10px;
     text-align: center;
     border-color: #ffffff;
-}
+    background-color: #133d24;
+} */
 
 
 
