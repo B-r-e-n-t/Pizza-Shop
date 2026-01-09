@@ -116,6 +116,8 @@
               <br><br>LIMITED SUPPLY  
               <br>PLACE ORDERS BY WEDNESDAY NIGHT
           </div>
+
+          <a style="font-size: 20px;" href="https://venmo.com/u/jon-reed0307">PAY US ON VENMO</a>
   
       </div>
   </section>
@@ -139,13 +141,16 @@
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="230334d3-c3a9-456f-bb3e-bc840e7be744">
+            <input type="text" name="Your Name" required>
+            <input type="email" name="Email Address" required>
+            <textarea name="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
+
+
 
     <!-- FOOTER -->
     <footer>
