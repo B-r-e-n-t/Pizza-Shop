@@ -74,25 +74,31 @@
     <!-- MENU -->
     <section id="menu" class="menu">
       <div class="menu-wrapper">
-        <p style="font-size: 40px;"><strong>🎉🎉🎉 SOLD OUT FOR 1/9/26 🎉🎉🎉</strong></p>
+        <!-- <p style="font-size: 40px;"><strong>🎉🎉🎉 SOLD OUT FOR 1/9/26 🎉🎉🎉</strong></p> -->
         <h1>OUR MENU</h1>
   
           <div class="menu-box">
   
               <div class="menu-item">
-                  <div class="menu-title">THE MEADOWBROOK</div>
+                  <div class="menu-title">MEADOWBROOK</div>
                   <div class="menu-price">17, 25</div>
                   <div class="menu-desc">cheese blend, tomato sauce, vodka sauce, pesto, parmesan</div>
               </div>
   
               <div class="menu-item">
-                  <div class="menu-title">THE NORTHSIDE</div>
+                  <div class="menu-title">WESTSCOTT</div>
                   <div class="menu-price">17, 25</div>
-                  <div class="menu-desc">cheese blend, garlic base, sausage, goat cheese, carmelized onions, hot honey, parmesan</div>
+                  <div class="menu-desc">cheese blend, onions, bell peppers, olives, mushrooms, tomato sauce, parmesan</div>
               </div>
+
+              <div class="menu-item">
+                <div class="menu-title">THE VALLEY</div>
+                <div class="menu-price">18, 26</div>
+                <div class="menu-desc">cheese blend, sausage, pepperoni, bacon, tomato sauce, parmesan</div>
+            </div>
   
               <div class="menu-item">
-                  <div class="menu-title">THE LEMOYNE AVE</div>
+                  <div class="menu-title">LEMOYNE (add pepperoni for $2)</div>
                   <div class="menu-price">14, 19</div>
                   <div class="menu-desc">cheese blend, tomato sauce, parmesan</div>
               </div>
@@ -106,15 +112,15 @@
         </div>
 
   
-          <div class="menu-order-text">
-              TEXT IN YOUR ORDER  
-              <br><span class="names">JON</span> 724-544-1551 &nbsp;&nbsp;&nbsp; <span class="names">BRENT</span> 601-454-5426
+          <div class="menu-order-text" style="font-size: 30px;">
+              ORDER ON THE CONTACT FORM BELOW 
+              <!-- <br><span class="names">JON</span> 724-544-1551 &nbsp;&nbsp;&nbsp; <span class="names">BRENT</span> 601-454-5426 -->
           </div>
   
           <div class="menu-details">
-              ASSIGNED PICK-UP TIMES BETWEEN 5 AND 7 ON FRIDAY 1/9/26  
+              ASSIGNED PICK-UP TIMES BETWEEN 5 AND 7 ON FRIDAY 1/16/26  
               <br><br>LIMITED SUPPLY  
-              <br>PLACE ORDERS BY WEDNESDAY NIGHT
+              <br>PLACE ORDERS BY THURSDAY NIGHT
           </div>
 
           <a style="font-size: 20px;" href="https://venmo.com/u/jon-reed0307">PAY US ON VENMO</a>
@@ -139,14 +145,15 @@
 
     <!-- CONTACT -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
+        <h2>Place Your Order Here</h2>
 
         <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="230334d3-c3a9-456f-bb3e-bc840e7be744">
-            <input type="text" name="Your Name" required>
-            <input type="email" name="Email Address" required>
-            <textarea name="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" placeholder="Name" name="Your Name" required>
+            <input type="email" placeholder="Phone Number" name="Phone Number" required>
+            <input type="email" placeholder="Email Address" name="Email Address" required>
+            <textarea name="Your Order" placeholder="Your Order" required></textarea>
+            <button type="submit">Send Order</button>
         </form>
     </section>
 
